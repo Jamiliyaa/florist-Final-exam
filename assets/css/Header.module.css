@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  height: 20vh;
+}
+.container:hover {
+  border: 0.5px solid #F45D96;
+  background-color: #ffeef5;
+}
+.container .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  gap: 30px;
+}
+.container .navbar .btn {
+  color: #F570A2;
+}
+.container .navbar button {
+  border: none;
+  background-color: transparent;
+  font-size: medium;
+}
+.container .navbar button:hover {
+  color: orange;
+}
+.container .iconbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  background-color: transparent;
+}
+.container .iconbox .btn {
+  border: none;
+  background-color: transparent;
+  font-size: x-large;
+}
+.container .iconbox .btn:hover {
+  color: #B63B1E;
+}
+.container .iconbox span {
+  color: orange;
+}
+.container .iconbox span .spann {
+  color: red;
+}
+.container .iconbox span .spann:hover {
+  color: orange;
+}
+.container .hmbgr {
+  display: none;
+}
+
+@media screen and (min-width: 300px) and (max-width: 576px) {
+  .container .navbar {
+    display: none;
+  }
+  .container .iconbox {
+    display: none;
+  }
+  .container .hmbgr {
+    display: block;
+  }
+  .container .hmbgr button {
+    border: none;
+    background-color: transparent;
+    color: black;
+    font-size: larger;
+  }
+}

@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+    background-image: url(https://preview.colorlib.com/theme/florist/img/call-bg.jpg);
+    &:hover{
+        border: 0.5px solid #F45D96;
+       } 
+    .textbox{
+        display: flex;
+        align-items:left;
+        justify-content: center;
+        height: 60vh;
+        width: 90%;
+        flex-direction: column;
+        background-color:transparent;
+        font-family:cursive;
+        color: white;
+        .btn{
+            display: flex;
+            justify-content: flex-start;
+            align-items:center;
+            margin-left: 40px;
+            margin-top: 20px;
+            gap: 20px;
+                .btn1{
+                    background-color: #F45D96;
+                    color: white;
+                    height: 50px;
+                    width: 15%;
+                    border-radius: 20px;
+                    border: none;
+                    &:hover{
+                        background-color:  white;
+                        color:#F45D96;
+                    }
+                }
+                .btn2{
+                  background-color: white;
+                  color: #F45D96; 
+                  height: 50px;
+                  width: 15%;
+                  border-radius: 20px;
+                  border: none; 
+                  &:hover{
+                    background-color:#F45D96;
+                  color:white ;
+                }
+                }
+            }
+
+        }
+     }
+     @media screen and (min-width:300px) and (max-width:576px) {
+         .container{
+            margin-top: 40px;
+         }      
+          .textbox{
+            .btn{
+                flex-direction: column;
+                .btn1{
+                    height: 70px;
+                    width: 100%;
+                }
+                .btn2{
+                    height: 70px;
+                    width: 100%;
+                }
+            }
+
+          }
+     }

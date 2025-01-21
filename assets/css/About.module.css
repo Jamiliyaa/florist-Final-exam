@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  height: 50vh;
+  width: 100%;
+}
+.container:hover {
+  border: 0.5px solid #F45D96;
+}
+.container .section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40vh;
+  width: 90%;
+  background-color: transparent;
+}
+.container .section span {
+  color: gray;
+}
+
+@media screen and (min-width: 300px) and (max-width: 576px) {
+  .container {
+    flex-wrap: wrap;
+  }
+  .container .section {
+    flex-direction: column;
+    font-size: xx-small;
+    margin-bottom: 40px;
+  }
+}

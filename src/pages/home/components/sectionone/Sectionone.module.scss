@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background-image: url(https://preview.colorlib.com/theme/florist/img/hero/hero-1.jpg);
+   &:hover{
+    border: 0.5px solid #F45D96;
+    background-image: url(https://preview.colorlib.com/theme/florist/img/hero/hero-2.jpg);  
+    transition: 0.1;
+}
+    .textbox{
+        display: flex;
+        align-items:left;
+        justify-content:left;
+        height: 45vh;
+        width:90%;
+        background-color:transparent;
+        flex-direction: column;
+        font-size: larger;
+       p{
+        &:hover{
+            color: #B63B1E;
+        }
+       }
+       h1{
+        &:hover{
+            color:goldenrod;
+        }
+       }
+        button{
+            height:40px;
+            width: 12%;
+            margin-left: 20px;
+            margin-top: 10px;
+            border-radius: 50px;
+            color: white;
+            background-color:#F45D96;
+            border: none;
+            &:hover{
+                background-color:white;
+                color:#BF4C2F;
+                border: 1px solid #F45D96;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:300px) and (max-width: 576px) {
+         .container{
+            .textbox{
+                button{
+                    height:40px;
+                    width: 20%; 
+                }
+            }
+         }    
+}

@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  width: 100%;
+  background-color: white;
+}
+.container:hover {
+  border: 0.1px solid #d1b097;
+  background-color: rgb(227, 223, 216);
+}
+.container .textbox {
+  color: black;
+  font-size: larger;
+}
+.container .textbox:hover {
+  color: rgb(123, 103, 103);
+}
+.container .textbox .span .FaHeart {
+  color: #F45D96;
+}
+.container .textbox .spann {
+  color: #F45D96;
+}
+.container .textbox .spann:hover {
+  color: white;
+}
